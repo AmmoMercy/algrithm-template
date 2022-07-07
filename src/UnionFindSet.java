@@ -1,6 +1,16 @@
 import java.util.Arrays;
 
+/**
+ * 这个类是一个并查集的模板
+ * 并查集是一种解决图的连通性问题的好方法
+ * UniFindSet是入口
+ * union用来连通两个结点所存在的子图
+ * find用于查询根结点
+ * isConnected 用于查询两个结点是否连通
+ * isolate 用于奖某个结点分离出他所在的连通子图
+ */
 class UnionFindSet {
+
     int[] father;
     int[] size;
 
